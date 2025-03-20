@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742445964 source:/home/katash/Desktop/C_programs/altt/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
