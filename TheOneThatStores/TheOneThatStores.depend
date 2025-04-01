@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1743526852 source:/home/katash/Desktop/C_programs/TheOneThatStores/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
