@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 #define MAX_ACCOUNTS 100
 
 typedef struct {
@@ -112,7 +113,7 @@ int main() {
                     saveAccounts("accounts.dat"); // Save changes
                     break;
                 }
-
+//Supposed to make the code display the receivers name
             }
             if (!valid) {
                 printf("Receiver account not found.\n");
