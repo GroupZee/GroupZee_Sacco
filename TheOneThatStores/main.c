@@ -137,6 +137,7 @@ int main() {
                             accounts[j].amount += amount; // Add
                         }
                     }
+                    printf("Success...");
                     saveAccounts("accounts.dat");// Save changes
                     logs("logs.dat",entry1,"Sent",amount);
                     break;
