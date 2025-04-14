@@ -198,6 +198,19 @@ for (int i = 0; i < n; i++) {
 }
 }
 
+void displayingGreeting(){
+    time_t t=time(NULL);
+    struct tm tm=*localtime(&t);
+
+    if(tm.tm_hour<12){
+        printf("Good morning our dear customer\n");
+    }else if(tm.tm_hour<17) {
+        printf("Good afternoon our dear customer\n");
+    }else{
+        printf("Good evening our dear customer.\n");
+    }
+}
+
 int main() {
     char entry1[13], entry2[13], entry3[5];
     double amount;
@@ -206,7 +219,8 @@ int main() {
 
 loadingAccounts();
 
-printf("Welcome to GroupZee Sacco.\nEnter your account number: ");
+displayingGreeting();
+printf("Please enter your account number: ");
 scanf("%12s",&entry1);
 if(!CheckinguserAccount(entry1)){
     return 1;
